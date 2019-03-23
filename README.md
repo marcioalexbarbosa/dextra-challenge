@@ -16,6 +16,8 @@ A seguir, apresentamos a lista de ingredientes disponíveis:
 
 ## Como rodar:
 
+**Pré-requisito:** Instalar a versão Latest LTS do node.js
+
 ### Server
 
 1 - Clone o repositório
