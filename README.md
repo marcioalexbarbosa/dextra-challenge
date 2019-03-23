@@ -14,6 +14,14 @@ A seguir, apresentamos a lista de ingredientes disponíveis:
 | Ovo                 | R$ 0,80 |
 | Queijo              | R$ 1,50 |
 
+## Módulos utilizados
+
+* cors
+* express
+* chai
+* mocha
+* @angular-cli
+
 ## Como rodar:
 
 **Pré-requisito:** Instalar a versão Latest LTS do node.js
