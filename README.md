@@ -22,6 +22,10 @@ A seguir, apresentamos a lista de ingredientes disponíveis:
 * mocha
 * @angular-cli
 
+## Considerações
+
+Os builds são testados por integração com o Codeship
+
 ## Como rodar:
 
 **Pré-requisito:** Instalar a versão Latest LTS do node.js
