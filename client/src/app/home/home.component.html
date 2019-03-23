@@ -1,3 +1,9 @@
-<p>
-  home works!
-</p>
+<h1>Monte seu cardápio</h1>
+<p></p>
+Escolha o seu lanche: <select [(ngModel)]="selectedOption" name="lanche" (ngModelChange)="onChange($event)">
+  <option *ngFor="let l of lanches">
+     {{l.name}}
+  </option>
+</select>
+<p></p>
+Valor: {{ valor }}
