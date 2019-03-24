@@ -9,6 +9,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { DlbclickDirective } from './dlbclick.directive';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FormsModule } from '@angular/forms';
     NavComponent,
     HomeComponent,
     ContactComponent,
-    AboutComponent
+    AboutComponent,
+    DlbclickDirective
   ],
   imports: [
     BrowserModule,

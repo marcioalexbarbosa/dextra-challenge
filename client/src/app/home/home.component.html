@@ -1,9 +1,45 @@
 <h1>Monte seu cardápio</h1>
 <p></p>
+<p [className]="'error'">{{ error_message }}</p>
 Escolha o seu lanche: <select [(ngModel)]="selectedOption" name="lanche" (ngModelChange)="onChange($event)">
   <option *ngFor="let l of lanches">
      {{l.name}}
   </option>
 </select>
+<p></p>
+<h3>Adicione ingredientes</h3>
+<p></p>
+<div [className]="'table'">
+  <div [className]="'tr'">
+    <div [className]="'td'"><button appDlbclick (click)="handleClickAlfaceMinus($event)">-</button></div>
+    <div [className]="'td'">Alface</div>
+    <div [className]="'td'"><button appDlbclick (click)="handleClickAlfacePlus($event)">+</button></div>
+    <div [className]="'td'">{{ qtd_alface }}</div>
+  </div>
+  <div [className]="'tr'">
+    <div [className]="'td'"><button appDlbclick (click)="handleClickBaconMinus($event)">-</button></div>
+    <div [className]="'td'">Bacon</div>
+    <div [className]="'td'"><button appDlbclick (click)="handleClickBaconPlus($event)">+</button></div>
+    <div [className]="'td'">{{ qtd_bacon }}</div>
+  </div>
+  <div [className]="'tr'">
+    <div [className]="'td'"><button appDlbclick (click)="handleClickHamburguerMinus($event)">-</button></div>
+    <div [className]="'td'">Hamburguer</div>
+    <div [className]="'td'"><button appDlbclick (click)="handleClickHamburguerPlus($event)">+</button></div>
+    <div [className]="'td'">{{ qtd_hamburguer }}</div>
+  </div>
+  <div [className]="'tr'">
+    <div [className]="'td'"><button appDlbclick (click)="handleClickOvoMinus($event)">-</button></div>
+    <div [className]="'td'">Ovo</div>
+    <div [className]="'td'"><button appDlbclick (click)="handleClickOvoPlus($event)">+</button></div>
+    <div [className]="'td'">{{ qtd_ovo }}</div>
+  </div>
+  <div [className]="'tr'">
+    <div [className]="'td'"><button appDlbclick (click)="handleClickQueijoMinus($event)">-</button></div>
+    <div [className]="'td'">Queijo</div>
+    <div [className]="'td'"><button appDlbclick (click)="handleClickQueijoPlus($event)">+</button></div>
+    <div [className]="'td'">{{ qtd_queijo }}</div>
+  </div>
+</div>
 <p></p>
 Valor: {{ valor }}

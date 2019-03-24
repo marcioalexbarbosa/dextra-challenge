@@ -89,4 +89,9 @@ Calculos.calculaValorLancheComIngredientes = (nome, extra) => {
   return valor;
 };
 
+Calculos.lanches = () => {
+  console.log('lanches', setup.lanches);
+  return setup.lanches;
+};
+
 module.exports = Calculos;

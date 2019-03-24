@@ -11,4 +11,13 @@ export class DataService {
   getValorLanche(lanche) {
     return this.http.get('http://localhost:3000/lanche/' + lanche)
   }
+
+  getLanches() {
+    return this.http.get('http://localhost:3000/lanche')
+  }
+
+  getValorLancheComIngredientes(lanche, extras) {
+    return this.http.post('http://localhost:3000/lanche/' + lanche, {extra: extras});
+  }
+
 }
