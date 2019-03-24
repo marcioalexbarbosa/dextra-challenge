@@ -40,6 +40,7 @@ Existe uma exceção à regra para o cálculo de preço, quando o lanche pertenc
 * express
 * chai
 * mocha
+* istanbul
 * @angular-cli
 
 ## Considerações
