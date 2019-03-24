@@ -42,6 +42,9 @@ Existe uma exceção à regra para o cálculo de preço, quando o lanche pertenc
 * mocha
 * istanbul
 * @angular-cli
+* nock
+* request 
+* request-promise
 
 ## Considerações
 
