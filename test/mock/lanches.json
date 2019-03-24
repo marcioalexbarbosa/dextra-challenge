@@ -1,0 +1,58 @@
+{
+    "x-bacon": [
+      {
+          "nome": "bacon",
+          "valor": 2
+      },
+      {
+          "nome": "hamburguer",
+          "valor": 3
+      },
+      {
+          "nome": "queijo",
+          "valor": 1.5
+      }
+  ],
+  "x-burguer": [
+      {
+          "nome": "hamburguer",
+          "valor": 3
+      },
+      {
+          "nome": "queijo",
+          "valor": 1.5
+      }
+  ],
+  "x-egg": [
+      {
+          "nome": "ovo",
+          "valor": 0.8
+      },
+      {
+          "nome": "hamburguer",
+          "valor": 3
+      },
+      {
+          "nome": "queijo",
+          "valor": 1.5
+      }
+  ],
+  "x-egg-bacon": [
+      {
+          "nome": "ovo",
+          "valor": 0.8
+      },
+      {
+          "nome": "bacon",
+          "valor": 2
+      },
+      {
+          "nome": "hamburguer",
+          "valor": 3
+      },
+      {
+          "nome": "queijo",
+          "valor": 1.5
+      }
+  ]
+}
