@@ -66,7 +66,7 @@ Os builds são testados por integração com o Codeship
 
 4 - Rode os testes
 
-`npm test`
+`npm run coverage`
 
 5 - Inicie o server
 
