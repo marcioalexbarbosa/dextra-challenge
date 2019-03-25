@@ -100,4 +100,8 @@ Lanches.lanches = () => {
   return setup.lanches;
 };
 
+Lanches.ingredientes = () => {
+  return setup.ingredientes;
+};
+
 module.exports = Lanches;

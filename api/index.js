@@ -7,6 +7,11 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+app.get('/ingrediente', (req, res) => {
+  const ingredientes = lanches.ingredientes();
+  return res.json(ingredientes);
+});
+
 app.get('/lanche', (req, res) => {
   const todosOsLanches = lanches.lanches();
   return res.json(todosOsLanches);
