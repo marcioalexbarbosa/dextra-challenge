@@ -36,12 +36,13 @@ Existe uma exceção à regra para o cálculo de preço, quando o lanche pertenc
 
 ## Módulos utilizados
 
-* cors
-* express
-* chai
-* mocha
-* istanbul
 * @angular-cli
+* chai
+* cors
+* eslint
+* express
+* istanbul
+* mocha
 * nock
 * request 
 * request-promise
