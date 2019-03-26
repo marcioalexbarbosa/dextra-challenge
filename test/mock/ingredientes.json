@@ -1,0 +1,7 @@
+{
+    "alface":{"nome":"alface","valor":0.4},
+    "bacon":{"nome":"bacon","valor":2},
+    "hamburguer":{"nome":"hamburguer","valor":3},
+    "ovo":{"nome":"ovo","valor":0.8},
+    "queijo":{"nome":"queijo","valor":1.5}
+}
