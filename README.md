@@ -1,6 +1,13 @@
 # dextra-challenge
 
-## Descrição:
+[Descrição](#descricao)
+[Módulos utilizados](#modulos)
+[Considerações](#consideracoes)
+[Como rodar](#rodar)
+[Testes](#testes)
+[Screenshot](#screenshot)
+
+## <a id="descricao"></a>Descrição:
 
 Somos uma startup do ramo de alimentos e precisamos de uma aplicação web para gerir nosso negócio. Nossa especialidade é a venda de lanches, de modo que alguns lanches são opções de cardápio e outros podem conter ingredientes personalizados.
 
@@ -34,7 +41,7 @@ Existe uma exceção à regra para o cálculo de preço, quando o lanche pertenc
 | Muito queijo       | A cada 3 porções de queijo o cliente só paga 2. Se o lanche tiver 6 porções, ocliente pagará 4. Assim por diante...        |
 | Inflação | Os valores dos ingredientes são alterados com frequência e não gastaríamos que isso influenciasse nos testes automatizados. |
 
-## Módulos utilizados
+## <a id="modulos"></a>Módulos utilizados
 
 * @angular-cli
 * chai
@@ -47,11 +54,11 @@ Existe uma exceção à regra para o cálculo de preço, quando o lanche pertenc
 * request 
 * request-promise
 
-## Considerações
+## <a id="consideracoes"></a>Considerações
 
 Os builds são testados por integração com o Codeship
 
-## Como rodar:
+## <a id="rodar"></a>Como rodar:
 
 ### Com docker
 
@@ -141,7 +148,7 @@ Os builds são testados por integração com o Codeship
 
 `npm start`
 
-## Testes
+## <a id="testes"></a>Testes
 
 1 - para rodar os testes do server
 
@@ -157,6 +164,6 @@ para rodar os testes de cobertura do server
 cd client
 ng test
 ```
-## Screenshot
+## <a id="screenshot"></a>Screenshot
 
 ![Screenshot](screenshot.png)
