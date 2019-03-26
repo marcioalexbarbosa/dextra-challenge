@@ -133,10 +133,30 @@ Os builds são testados por integração com o Codeship
 
 `npm install @angular/cli -g`
 
-4 - Rode o client
+4 - Rode os testes
+
+`ng test`
+
+5 - Rode o client
 
 `npm start`
 
+## Testes
+
+1 - para rodar os testes do server
+
+`npm test`
+
+para rodar os testes de cobertura do server
+
+`npm run coverage`
+
+2 - para rodar os testes do client
+
+```bash
+cd client
+ng test
+```
 ## Screenshot
 
 ![Screenshot](screenshot.png)
