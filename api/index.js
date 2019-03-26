@@ -27,6 +27,7 @@ app.post('/lanche/:nome', (req, res) => {
   return res.send(`${valor}`);
 });
 
-app.listen(3000, () =>
+app.listen(3000, () => 
+  /* eslint-disable-next-line no-console */
   console.log(`app listening on port 3000!`)
 );

@@ -59,7 +59,6 @@ export class HomeComponent implements OnInit {
   onChange(newValue) {
     this.selectedOption = newValue;
     this.limpaQuantidades();
-    console.log('newValue', newValue);
     if (newValue === 'Escolha') {
       this.valor = 0;
       return;
@@ -67,7 +66,6 @@ export class HomeComponent implements OnInit {
     this.error_message = '';
     this.data.getValorLanche(this.selectedOption).subscribe(data => {
       this.valor = this.formataValor(data);
-      console.log(this.valor);
     }, error => {
       this.error_message = 'Servidor indisponível';
     });
@@ -96,10 +94,8 @@ export class HomeComponent implements OnInit {
     if (index > -1) {
       this.extras.splice(index, 1);
     }
-    console.log('extras minus', this.extras);  
     this.data.getValorLancheComIngredientes(this.selectedOption, this.extras).subscribe(data => {
       this.valor = this.formataValor(data);
-      console.log(this.valor);
     }, error => {
       this.error_message = 'Servidor indisponível';
     });
@@ -115,10 +111,8 @@ export class HomeComponent implements OnInit {
     }
     qtd = qtd + 1;
     this.extras.push(nome);
-    console.log('extras plus', this.extras);
     this.data.getValorLancheComIngredientes(this.selectedOption, this.extras).subscribe(data => {
       this.valor = this.formataValor(data);
-      console.log(this.valor);
     }, error => {
       this.error_message = 'Servidor indisponível';
     });

@@ -34,8 +34,6 @@ Lanches.verificaMuitoIngrediente = (nome, ingredientes) => {
       totalDesconto++;
     }
   });
-  console.log('total', total);
-  console.log('totalDesconto', totalDesconto);
   return totalDesconto;
 };
 
@@ -64,7 +62,7 @@ Lanches.calculaValorLancheComIngredientes = (nome, extra) => {
     return Lanches.calculaValorLanche(nome);
   }
   const lanche = setup.lanches[nome];
-  ingredientes = [];
+  var ingredientes = [];
   let valor = 0;
   lanche.forEach(element => {
     valor += element.valor;
@@ -72,14 +70,12 @@ Lanches.calculaValorLancheComIngredientes = (nome, extra) => {
   });
   extra.forEach(element => {
     let ingrediente = setup.ingredientes[element];
-    console.log('ingrediente', ingrediente);
     valor += ingrediente.valor;
     ingredientes.push(ingrediente);
   });
   const descontoLight = Lanches.verificaDescontoLight(ingredientes);
-  console.log('desconto', descontoLight);
   if (descontoLight > 0) {
-    desconto = (descontoLight * valor) / 100.0;
+    var desconto = (descontoLight * valor) / 100.0;
     valor = valor - desconto;
   }
   const totalDescontoCarne = Lanches.verificaMuitaCarne(ingredientes);
@@ -96,7 +92,6 @@ Lanches.calculaValorLancheComIngredientes = (nome, extra) => {
 };
 
 Lanches.lanches = () => {
-  console.log('lanches', setup.lanches);
   return setup.lanches;
 };
 

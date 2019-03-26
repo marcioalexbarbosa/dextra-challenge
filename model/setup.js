@@ -3,8 +3,7 @@ const Ingrediente = require('./ingrediente');
 const Setup = {};
 
 Setup.cria = () => {
-  return new Promise((resolve, reject) => {
-    console.log('cria chamado');
+  return new Promise(resolve => {
     const alface = new Ingrediente('alface', 0.4);
     const bacon = new Ingrediente('bacon', 2);
     const hamburguer = new Ingrediente('hamburguer', 3);

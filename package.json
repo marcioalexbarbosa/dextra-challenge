@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint .",
     "test": "node ./node_modules/mocha/bin/mocha",
     "coverage": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha",
     "start": "node api/index"
@@ -16,6 +17,8 @@
   },
   "devDependencies": {
     "chai": "^4.2.0",
+    "eslint": "^5.15.3",
+    "eslint-config-standard": "^12.0.0",
     "istanbul": "^0.4.5",
     "mocha": "^6.0.2",
     "nock": "^10.0.6",
