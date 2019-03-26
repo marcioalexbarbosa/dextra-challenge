@@ -1,10 +1,15 @@
 # dextra-challenge
 
 [Descrição](#descricao)
+
 [Módulos utilizados](#modulos)
+
 [Considerações](#consideracoes)
+
 [Como rodar](#rodar)
+
 [Testes](#testes)
+
 [Screenshot](#screenshot)
 
 ## <a id="descricao"></a>Descrição:
