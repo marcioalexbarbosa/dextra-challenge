@@ -52,9 +52,51 @@ Os builds são testados por integração com o Codeship
 
 ## Como rodar:
 
-**Pré-requisito:** Instalar a versão Latest LTS do node.js
+### Com docker
 
-### Server
+**Pré-requisito:** Ter o docker instalado na máquina
+
+#### Server
+
+1 - Clone o repositório
+
+`git clone https://github.com/marcioalexbarbosa/dextra-challenge.git`
+
+2 - Entre no diretório dextra-challenge
+
+`cd dextra-challenge`
+
+3 - Faça build da imagem
+
+`sudo docker build -t dextra-challenge .`
+
+4 - Rode o container
+
+`sudo docker run -p 3000:3000 -d dextra-challenge`
+
+#### Client
+
+1 - Entre no diretório client
+
+`cd client`
+
+2 - Faça build da imagem
+
+`sudo docker build -t dextra-challenge-client .`
+
+3 - Rode o container
+
+`sudo docker run -it -v ${PWD}:/usr/src/app -v /usr/src/app/node_modules -p 4200:4200 --rm dextra-challenge-client`
+
+4 - Abra uma aba do browser no endereço
+
+`http://localhost:4200`
+
+### Sem docker
+
+**Pré-requisito:** Instalar a versão Latest LTS do node.js (10.15.3)
+
+#### Server
 
 1 - Clone o repositório
 
@@ -76,7 +118,7 @@ Os builds são testados por integração com o Codeship
 
 `npm start`
 
-### Client
+#### Client
 
 1 - Abra outro terminal e vá até o diretório do client
 
