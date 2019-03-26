@@ -135,3 +135,7 @@ Os builds são testados por integração com o Codeship
 4 - Rode o client
 
 `npm start`
+
+## Screenshot
+
+![Screenshot](screenshot.png)
