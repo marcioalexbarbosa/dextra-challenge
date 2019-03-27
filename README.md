@@ -57,7 +57,9 @@ Existe uma exceção à regra para o cálculo de preço, quando o lanche pertenc
 
 ## <a id="consideracoes"></a>Considerações
 
-Os builds são testados por integração com o Codeship
+Os builds são testados por integração com o Codeship.
+Utilizei eslint para checar para identificar e reportar problemas de código.
+Utilizei o istanbul para reportar a cobertura dos testes.
 
 ### coverage summary
 
@@ -70,7 +72,15 @@ Lines        : 95.28% ( 101/106 )
 ================================================================================
 ```
 
-## Relatório
+## <a id="relatorio"></a>Relatório de justificativas para escolha do design de código
+
+Eu criei um objeto para modelar os ingredientes, mas não criei para os lanches porque pude montar os lanches como um objeto javascript composto por ingredientes. Assim ingredientes se tornou o mínimo denominador comum do modelo.
+Todo o código (backend e frontend) partiu do pressuposto de que tínhamos que calcular o valor dos lanches com ou sem ingredientes extras. Então a api REST atende somente esta premissa. A classe business também atende a essa regra de negócio e possui métodos para calcular o valor do lanche com ou sem ingredientes extras e a lógica para aplicar os descontos.
+Procurei desacoplar as camadas implementando as regras de negócio em business, o modelo em model e o REST em api.
+Os testes da api usam um módulo para simular requisições http (nock).
+O client foi programado em angular devido a facilidade de se trabalhar com componentes. E também devido à facilidade intrínsica do angular de poder gerar facilmente componentes por linha de comando.
+Não utilizei promisses na classe business porque como os dados estão em memória, as operações sobre eles são atômicas e síncronas.
+
 
 ## <a id="rodar"></a>Como rodar:
 
