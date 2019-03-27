@@ -3,6 +3,7 @@
 [Descrição](#descricao)<br>
 [Módulos utilizados](#modulos)<br>
 [Considerações](#consideracoes)<br>
+[Relatório de justificativas para escolha do design de código](#relatorio)<br>
 [Como rodar](#rodar)<br>
 [Testes](#testes)<br>
 [Screenshot](#screenshot)
@@ -57,6 +58,17 @@ Existe uma exceção à regra para o cálculo de preço, quando o lanche pertenc
 ## <a id="consideracoes"></a>Considerações
 
 Os builds são testados por integração com o Codeship
+
+### coverage summary
+
+=============================== Coverage summary ===============================
+Statements   : 95.28% ( 101/106 )
+Branches     : 91.67% ( 22/24 )
+Functions    : 100% ( 1/1 )
+Lines        : 95.28% ( 101/106 )
+================================================================================
+
+## Relatório
 
 ## <a id="rodar"></a>Como rodar:
 
