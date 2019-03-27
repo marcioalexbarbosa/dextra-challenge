@@ -61,12 +61,14 @@ Os builds são testados por integração com o Codeship
 
 ### coverage summary
 
+```
 =============================== Coverage summary ===============================
 Statements   : 95.28% ( 101/106 )
 Branches     : 91.67% ( 22/24 )
 Functions    : 100% ( 1/1 )
 Lines        : 95.28% ( 101/106 )
 ================================================================================
+```
 
 ## Relatório
 
