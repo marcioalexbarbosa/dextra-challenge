@@ -78,7 +78,7 @@ Eu criei um objeto para modelar os ingredientes, mas não criei para os lanches 
 Todo o código (backend e frontend) partiu do pressuposto de que tínhamos que calcular o valor dos lanches com ou sem ingredientes extras. Então a api REST atende somente esta premissa. A classe business também atende a essa regra de negócio e possui métodos para calcular o valor do lanche com ou sem ingredientes extras e a lógica para aplicar os descontos.
 Procurei desacoplar as camadas implementando as regras de negócio em business, o modelo em model e o REST em api.
 Os testes da api usam um módulo para simular requisições http (nock).
-O client foi programado em angular devido a facilidade de se trabalhar com componentes. E também devido à facilidade intrínsica do angular de poder gerar facilmente componentes por linha de comando.
+O client foi programado em angular devido a facilidade de se trabalhar com componentes. E também devido à facilidade intrínsica do angular de poder gerar facilmente componentes por linha de comando. Os lanches e ingredientes não foram reduntantes e repetidos no frontend, ao invés disso eles são montados dinamicamente de acordo com o valor persistido em memório fornecido pelo backend.
 Não utilizei promisses na classe business porque como os dados estão em memória, as operações sobre eles são atômicas e síncronas.
 
 
